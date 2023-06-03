@@ -17,7 +17,7 @@ const path = require('path');
   await page.emulateMediaType('screen');
 
   await page.pdf({
-    path: 'output/result.pdf',
+    path: 'output/from-html.pdf',
     margin: { top: '100px', right: '50px', bottom: '100px', left: '50px' },
     printBackground: true,
     format: 'A4',
