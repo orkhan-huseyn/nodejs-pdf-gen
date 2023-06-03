@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-pdf-gen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "html-to-pdf": "node html-to-pdf.js",
+    "tex-to-pdf": "./generate.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^20.5.0"
+  }
+}
