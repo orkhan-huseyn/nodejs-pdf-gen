@@ -34,6 +34,32 @@ sys 0.41
             39518272  peak memory footprint
 ```
 
+Generating using `wkhtml`:
+
+```sh
+$ /usr/bin/time -l -h -p ./wkhtml.sh
+real 1.55
+user 0.50
+sys 0.09
+            43528192  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12827  page reclaims
+                 220  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  11  messages sent
+                  16  messages received
+                   0  signals received
+                 246  voluntary context switches
+                3282  involuntary context switches
+            14752341  instructions retired
+             8794820  cycles elapsed
+             1049152  peak memory footprint
+```
+
 Generating from LaTeX tamplate:
 
 ```sh
