@@ -2,7 +2,7 @@
 
 [Install xelatex on Mac](https://gist.github.com/peterhurford/75957ba9335e755013b87254ec85fab1)
 
-+ `tlmgr install collection-latexextra`
+- `tlmgr install collection-latexextra`
 
 [Install xelatex on Ubuntu](https://tex.stackexchange.com/questions/179778/xelatex-under-ubuntu)
 
@@ -85,3 +85,13 @@ sys 0.05
              7562555  cycles elapsed
              1032768  peak memory footprint
 ```
+
+# Summary (kind of)
+
+- Pupetteer - Takes total of 2.74 seconds. Generated PDF is 53 KB. (runs on headless chromium)
+- Wkhtmltopdf - Takes total of 1.55 seconds. Generated PDF is about 20 KB. (runs on headless Qt WebKit rendering engine)
+- Xelatex - Takes total of 0.38 seconds. Generated PDF is about 61 KB. (just runs xelatex compiler)
+
+For detailed, memory and CPU usage, check CLI outputs provided above.
+
+**Note**: LaTeX tempalate is a different template than the ones used in HTML to PDF generation, thus I cannot verify which method is more efficient in terms of output size. I am not good at writing latex templates from scratch so I used [a template from Overlef](https://www.overleaf.com/latex/templates/simple-invoice-template/gmxrwszhhccr).
